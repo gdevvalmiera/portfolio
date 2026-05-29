@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="lv" style="scroll-behavior: smooth;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TopAuto Serviss</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="scrolled">
+            <div class="logo-container">
+                <h1>
+                    TopAuto
+                    <img src="topauto.png" alt="logo">
+                    Serviss
+                </h1>    
+            </div>
+            <nav>
+                <a href="#sakums">Sākums</a>
+                <a href="#pakalpojumi">Pakalpojumi</a>
+                <a href="#par-mums">Par mums</a>
+                <a href="#kontakti">Kontakti</a>
+            </nav>
+        </header>
+        <section class="hero" id="sakums">
+            <h2>Profesionāls auto serviss</h2>
+            <p>Kvalitatīvs remonts, diagnostika un apkope</p>
+            <a href="#pieteikums">Pieteikt Vizīti</a>
+        </section>
+        <section id="pieteikums">
+            <h2>Pieteikt vizīti</h2>
+            <form action="https://formspree.io/f/xdajeoqn" method="post">
+                <label for="vards">Vārds Uzvārds</label>
+                <input type="text" id="vards" name="pilns_vards" placeholder="Jānis Bērziņš" required>
+                <label for="telefons">Telefons</label>
+                <input type="tel" id="telefons" name="telefons" placeholder="+371 12345678" pattern="^\+371\s\d{8}$" required>
+                <label for="epasts">E-pasts</label>
+                <input type="email" id="epasts" name="epasts" placeholder="piemers@gmail.com" required>
+                <label for="pakalpojums">Pakalpojums</label>
+                <select id="pakalpojums" name="pakalpojums" required>
+                    <option value="">Izvēlies pakalpojumu</option>
+                    <option>Diagnostika</option>
+                    <option>Remonts</option>
+                    <option>Riepu maiņa</option>
+                </select>
+                <label for="datums">Vēlamais vizītes datums</label>
+                <input type="date" id="datums" name="datums" required>
+                <label for="info">Papildus informācija</label>
+                <textarea id="info" name="papildus_info" placeholder="Apraksti problēmu..."></textarea>
+                <button type="submit">Pieteikt vizīti</button>
+            </form>
+            <p id="success-message" style="display: none; color: green; margin-top: 10px;">
+                Paldies! Pieteikums nosūtīts 
+            </p>
+        </section>
+        <section id="pakalpojumi">
+            <h2>Pakalpojumi</h2>
+            <div class="pakalpojumi-container">
+                <div class="pakalpojums">
+                    <h3>Diagnostika</h3>
+                    <p>Precīza auto diagnostika ar modernām iekārtām.</p>
+                </div>
+                <div class="pakalpojums">
+                    <h3>Remonts</h3>
+                    <p>Ātrs un kvalitatīvs visu veidu remonts.</p>
+                </div>
+                <div class="pakalpojums">
+                    <h3>Riepu maiņa</h3>
+                    <p>Sezonāla riepu maiņa un balansēšana.</p>
+                </div>
+            </div>
+        </section>
+        <section id="par-mums">
+            <h2>Par mums</h2>
+            <p>TopAuto Serviss ir uzticams auto serviss, kas nodrošina kvalitatīvu
+               transportlīdzekļu remontu un apkopi. Mūsu mērķis ir piedāvāt klientiem
+               ātru, godīgu un profesionālu servisu, lai katrs auto būtu drošs uz ceļa</p>
+            <p>Mēs specializējamies diagnostikā, remontā un regulārā apkopē, izmantojot
+               modernas iekārtas un pārbaudītas metodes. Katram klientam pieejam
+               individuāli un vienmēr cenšamies atrast labāko risinājumu.</p>
+            <p><strong>Strādājam ar attieksmi, it kā remontētu savu auto.</strong></p>
+        </section>
+        <section id="kontakti">
+            <h2>Kontakti</h2>
+            <p><strong>Adrese:</strong>Rīga, Latvija</p>
+            <p><strong>Telefons:</strong><a href="tel:+37125443151">+371 25443151</a></p>
+            <p><strong>E-pasts:</strong><a href="mailto:info@topauto.lv">info@topauto.lv</a></p>
+            <p><strong>Darba laiks:</strong><br>
+            Pirmdiena - Piektdiena: 9:00 - 18:00<br>
+            Sestdiena: 10:00 - 15:00<br>
+            Svētdiena: Slēgts</p>
+            <iframe 
+            src="https://www.google.com/maps?q=Riga&output=embed" 
+            width="100%" 
+            height="300" 
+            style="border:0; margin-top:20px;"
+            loading="lazy">
+            </iframe>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h3>TopAuto Serviss</h3>
+                    <p>Kvalitatīvs auto remonts un apkope.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Izvēlne</h3>
+                    <a href="#sakums">Sākums</a><br>
+                    <a href="#pakalpojumi">Pakalpojumi</a><br>
+                    <a href="#par-mums">Par mums</a><br>
+                    <a href="#kontakti">Kontakti</a>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontakti</h3>
+                    <p><a href="tel:+37125443151">+371 25443151</a></p>
+                    <p><a href="mailto:info@topauto.lv">info@topauto.lv</a></p>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2026 TopAuto serviss</p>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
