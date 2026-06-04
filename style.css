@@ -39,6 +39,7 @@ footer {
 header {
     position: sticky;
     top: 0;
+    overflow: hidden;
     background: #1a1a1a;
     padding: 20px;
     margin-bottom: 40px;
@@ -110,4 +111,20 @@ nav a:hover {
 }
 #kontakti a:hover {
     text-decoration: #ff6b00;
+}
+.stars {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+header > *:not(.stars) {
+    position: relative;
+    z-index: 1;
 }
