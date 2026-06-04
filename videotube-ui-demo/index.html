@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoTube UI Demo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">VideoTube</div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search videos...">
+        </div>
+        <button class="profile-btn">GD</button>
+    </header>
+    <main class="page-layout">
+        <aside class="sidebar">
+            <a href="#" data-category="all" class="active">Home <span class="count"></span></a>
+            <a href="#" data-category="gaming">Gaming <span class="count"></span></a>
+            <a href="#" data-category="tech">Tech <span class="count"></span></a>
+            <a href="#" data-category="music">Music <span class="count"></span></a>
+            <a href="#" data-category="learning">Learning <span class="count"></span></a>
+        </aside>
+        <section class="videos-section">
+            <div class="selected-video" id="selectedVideo">
+                <h2>Select a video</h2>
+                <p>Click on any video card to see details here.</p>
+            </div>
+            <article class="video-card" data-category="gaming">
+                <div class="thumbnail">▶</div>
+                <h3>SnowRunner Gameplay</h3>
+                <p>Gaming Channel • 12K views</p>
+            </article>
+            <article class="video-card" data-category="learning">
+                <div class="thumbnail">▶</div>
+                <h3>HTML CSS Basics</h3>
+                <p>Code Academy • 8K views</p>
+            </article>
+            <article class="video-card" data-category="tech">
+                <div class="thumbnail">▶</div>
+                <h3>PC Build Guide</h3>
+                <p>Tech Garage • 21K views</p>
+            </article>
+            <article class="video-card" data-category="gaming">
+                <div class="thumbnail">▶</div>
+                <h3>Horizon Forbidden West Tips</h3>
+                <p>Game Tips LV • 15K views</p>
+            </article>
+            <article class="video-card" data-category="learning">
+                <div class="thumbnail">▶</div>
+                <h3>JavaScript Mini Projects</h3>
+                <p>Code Lab • 6K views</p>
+            </article>
+            <article class="video-card" data-category="gaming">
+                <div class="thumbnail">▶</div>
+                <h3>Best Open World Games</h3>
+                <p>Gaming Zone • 32K views</p>
+            </article>
+            <p id="noResults" class="no-results">No videos found</p>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+
+</body>
+</html>
