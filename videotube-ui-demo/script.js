@@ -37,6 +37,7 @@ updateCategoryCounts();
 searchInput.addEventListener('input', function () {
     const searchText = searchInput.value.toLowerCase();
     let foundVideos = 0;
+    selectedVideo.classList.remove('active');
     categoryLinks.forEach(function (item) {
     item.classList.remove('active');
     });
